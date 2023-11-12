@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
+/* apply style to all elements in html */
+*{ 
+    font-family: 'Young Serif', serif;
+    color: aliceblue;
+
+    padding: 0%;
+    margin: 0%;
+    transition: 0.2s linear;
+}
+:root {
+    --color: blue;
+  }
+
+/* HTML element atyle */
+html{
+    scroll-behavior: smooth;
+}
+
+/* work in html body */
+body{
+    background-color: #222;
+
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+/* misc */
+a{
+    text-decoration: none;
+}
+
+/* header style */
+header{
+    display: flex;
+    justify-content:space-between ;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.8rem 8%;
+}
+header nav a{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+header nav :hover{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:var(--color);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* logo */
+.logo{   
+    font-weight: bolder;
+    font-size: 20px;
+}
+.logo span{
+    color: var(--color);
+}
+
+/* section */
+section{
+    padding: 0.5px 25px;
+}
+
+
+/* ================================= */
+/* home section */
+.home_content{
+    
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem auto ;
+    max-width: 70rem;
+
+}
+#hh{
+    font-family: 'Onest', sans-serif;
+    color: var(--color);
+}
+.contactus{ 
+    margin-top:1.25rem ;
+}
+.contactus a{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: beige;
+ 
+
+}
+.contactus :hover{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--color);
+
+}
+
+h3{
+    font-family: 'Onest', sans-serif;
+    font-size: 3.5rem;
+}
+
+.image{
+    text-align: center;
+    padding-top: 2rem;
+    max-width: 550px;
+    height: 360px;
+    border-radius: 2.5rem;
+
+
+}
+.image_2{
+    text-align: center;
+    padding-top: 2rem;
+    max-width: 550px;
+    height: 360px;
+    border-radius: 2.5rem;
+
+
+}
+.image_2:hover{
+ 
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+.image:hover{
+ 
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+/* ================================= */
+/* price */
+.price h1{
+    font-family: 'Onest', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem  ;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.price h1 span{
+    font-family: 'Onest', sans-serif;
+    color: var(--color);
+}
+ul{
+    list-style-type: none;
+    padding: 1rem 0;
+}
+.contaner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 1.5rem;
+}
+
+/* card */
+.box{
+    padding: 2rem 0;
+    background-color:#333;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.box:hover{
+    background-color:grey;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.title{
+    background-color: var(--color);
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
+.money{
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+li{
+    padding-bottom: 1.2rem;
+}
+i{
+    padding-right: 0.25rem;
+}
+.btn{
+
+    margin: 0.5rem;
+    padding: 0.25rem 1.2rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    background-color: #666;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:var(--color);
+}
+/* ================================= */
+/* about */
+.head{
+    font-family: 'Onest', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem  ;
+    font-size: 2.5rem;
+}
+.head span{
+        font-family: 'Onest', sans-serif;
+        color: var(--color);
+}
+
+.about_content{
+    display: flex;
+    align-items: center;
+
+    gap: 1.5rem;
+}
+.about_img{
+    flex: 1 1 45rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.about_content h2{
+    font-family: 'Onest', sans-serif;
+    color: var(--color);
+    font-size: 40px;
+    padding-bottom: 1.2rem;
+}
+#ab{
+width: 100%;
+border-radius: 0.5rem;
+border: 0.5rem solid grey ;
+}
+.words{
+    flex: 1 1 45rem;
+
+}
+.about_content p{
+    font-size: large;
+    padding-bottom: 1.2rem;
+}
+/* ================================= */
+/* gallary */
+.gallary{
+    display: flex;
+    text-align: center;
+    padding-top: 2rem;
+
+}
+.headerG{
+    font-family: 'Onest', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem  ;
+    font-size: 2.5rem;
+}
+.headerG span{
+        font-family: 'Onest', sans-serif;
+        color: var(--color);
+}
+.img_{
+    text-align: center;
+
+    max-width: 476px;
+    height: 345px;
+    border-radius: 2.5rem;
+    box-shadow: 10px 20px 30px purple;
+    border: 0.25rem solid grey ;
+}
+.img_:hover{
+ 
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+/* ================================= */
+/* Review */
+
+.heading_{
+    font-family: 'Onest', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem  ;
+    font-size: 2.5rem;
+}
+.heading_ span{
+    font-family: 'Onest', sans-serif;
+    color: var(--color);
+}
+#sp2{
+    text-align: center;  
+}
+.es
+{
+    display: flex;
+ 
+}
+.image1{
+    width: 90px;
+    height: 80px;
+    padding-bottom: 2rem;
+
+}
+.name1{
+    color: rgba(227, 224, 224, 0.845);
+    font-size: small;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+p1{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(182, 182, 202);
+    padding-top: 2rem;
+}
+/* ================================= */
+/* contact */
+.ff{
+    max-width: 60rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+.input_box{
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+    
+}
+.inp{
+    width: 100%;
+    background-color: #333;
+    border-radius: 0.5rem;
+    margin: 0.3rem;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+/* ================================= */
+/* cfooter */
+footer{
+    background-color: #222;
+    opacity: 0.75;
+}
+.creidt{
+    text-align: center;
+    font-family: 'Onest', sans-serif;
+    padding: 1.5rem;
+    border: 0.1rem solid #666;
+}
+.box_{
+    padding: 1rem 0;
+    background-color:#222;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+    opacity: 0.75;
+}
+.head_{
+    font-family: 'Onest', sans-serif;
+    color:antiquewhite;
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.75;
+}
+
+
+/*===============================================================*/
+
+  .icon-bar {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    position:fixed;
+    color: white;
+    font-size: 36px;
+    left: 1448px;
+    top :100px;    
+    background-color: #171616;
+    width: 50px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .icon-bar:hover {
+    background-color: #000;
+  }
+
+  .colors_ {
+
+    text-align: center;
+    position: fixed;
+    /* padding: 31px; */
+    font-size: 49px;
+    left: 1408px;
+    top: 118px;
+    background-color: #171616;
+    border-radius: 1.5rem;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    cursor: pointer;
+    margin: 42px;
+ 
+  }
+  .colors_ i{
+    padding: 6px;
+    
+  }
+  .colors_ i:hover{
+    font-size: 55px;
+
+  }
+  /*====================================*/
+  .swiper-slide img{
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50px;
+    
+
+}
+  

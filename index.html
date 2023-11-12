@@ -1,0 +1,331 @@
+<html>
+
+<head>
+    <title>Evento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <script src="index.js"></script> 
+    <style>
+        /* work in html body */
+        body {
+            background-image: url("images/grey-background-with-repeating-squares.png");
+        }
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Head-->
+        <a href="#" class="logo"><span>E</span>vento</a>
+
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Price">Service</a>
+            <a href="#About">About</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Price">Price</a>
+            <a href="#Review">Review</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <!--------------------------------------------------------------------------------------------->
+    <div class="icon-bar" >
+        <i class="fa-solid fa-gear fa-spin" style="color: #d5d8dd;" onclick="Togglemenu()"  ></i>
+      </div>
+      <div class="colors_" id="submenu" >
+            <i class="fa-solid fa-circle" style="color: #11d48a;" onclick="set_color(1)"></i>
+            <i class="fa-solid fa-circle" style="color: blue;" onclick="set_color(2)"></i>
+            <i class="fa-solid fa-circle" style="color: #d45511;" onclick="set_color(3)"></i>
+            <i class="fa-solid fa-circle" style="color: #d411c4;" onclick="set_color(4)"></i>
+        </a>
+       </div>
+    <!--------------------------------------------------------------------------------------------->
+    <!--Sections-->
+    <!--Home-->
+
+    <section id="Home">
+        <div class="home_content">
+            <h3>ITS TIME TO CELEBRATE! THE BEST<span id="hh"> EVENT ORGANIZERS</span></h3>
+
+            <div class="contactus"><a href="#Contact">Contact Us</a></div>
+
+
+
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="gallary/1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="gallary/2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="gallary/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="gallary/4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="gallary/5.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+    
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                centeredSlides: true,
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                autoplay: {
+                    delay: 3000
+                },
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: false
+                },
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+    
+                // Navigation arrows
+    
+                slidesPerView: 1,
+                spaceBetween: 10,
+    
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    640: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    }
+                }
+            });
+        </script>
+  
+    </section>
+
+    <!--about-->
+    <section id="About" class="about">
+        <h1 class="head"><span>About</span> Us</h1>
+        <div class="about_content">
+            <div class="about_img">
+                <img src="about/event14.jpg" alt="" id="ab">
+            </div>
+            <div class="words">
+                <h2>Celebration For You</h2>
+                <p>
+                    Lorem Ipsum Dolor Sit Amet Ccnsectetur Adipisicing Flit. Ullam Labore Fuglat Ut
+                    Esse Perferendis Perspiciatis Provident Dolores Fuga In Facilis Culpa Possirnus.
+                    Quia Praesentium taque. Sapiente Quasi Harum Rem Asperiores.
+                </p>
+                <p>
+                    Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Fugiat Vero Expedita
+                    Incidunt Provident Quibusdam Aut Odit, Numquarn Nesciunt Similique Nisi.
+                </p>
+                <a href="#Contact" class="btn">Contact Us</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="Gallery">
+        <div class="gallery">
+            <h1 class="headerG"><span>OUR</span> GALLERY</h1>
+            <img src="gallary/360_F_287357045_Ib0oYOxhotdjOEHi0vkggpZTQCsz0r19.jpg" alt="" class="img_">
+            <img src="gallary/4.jpg" alt="" class="img_">
+            <img src="gallary/5.jpg" alt="" class="img_">
+            <img src="gallary/1.jpg" alt="" class="img_">
+            <img src="gallary/2.jpg" alt="" class="img_">
+            <img src="gallary/3.jpg" alt="" class="img_">
+        </div>
+    </section>
+
+
+    <!--Price-->
+    <section id="Price" class="Price">
+
+        <h1>our <span>Price </span>and <span>service </span></h1>
+        <div class="contaner">
+            <div class="box">
+                <h3 class="title">For birthdays</h3>
+                <h3 class="money">$250.99</h3>
+                <!-- ul for list of item -->
+                <ul>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Full Service</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Decoration</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Music</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Food</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Invitation card</li>
+                    <a href="#" class="btn">Check Out</a>
+                </ul>
+            </div>
+            <div class="box">
+                <h3 class="title">For Weddings</h3>
+                <h3 class="money">$450.99</h3>
+                <!-- ul for list of item -->
+                <ul>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Full Service</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Decoration</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Music</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Food</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Invitation card</li>
+                    <a href="#" class="btn">Check Out</a>
+                </ul>
+            </div>
+            <div class="box">
+                <h3 class="title">For Concerts</h3>
+                <h3 class="money">$650.99</h3>
+                <!-- ul for list of item -->
+                <ul>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Full Service</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Decoration</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Music</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Food</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Invitation card</li>
+                    <a href="#" class="btn">Check Out</a>
+                </ul>
+            </div>
+            <div class="box">
+                <h3 class="title">For Others</h3>
+                <h3 class="money">$850.99</h3>
+                <!-- ul for list of item -->
+                <ul>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Full Service</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Decoration</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Music</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Food</li>
+                    <li><i class="fa-solid fa-check" style="color: #0c56d4;"></i>Invitation card</li>
+                    <a href="#" class="btn">Check Out</a>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Review">
+        <h1 class="heading_">
+            <span>CLIENT'S</span> REVIEW
+        </h1>
+
+        <div class="es">
+            <img src="images/pngkey.com-review-icon-png-2074089.png" class="image1">
+            <div class="name1">
+                <span>John Deo</span>
+                <p>Happy Clients</p>
+            </div>
+
+        </div>
+        <p class="p1"> background would definitely appreciate it.
+            The layout makes anyone feel comfortable because it is so well done and clean looking.
+            You feel as if you are in good hands and you know that you will be able to find anything you need on this
+            site.
+            The Happiness Ring worked very efficiently and professionally.
+            We were very happy with all their services. Kadija and her team were professional from the first e-mail to
+            the day of our big day.
+            I can’t be more grateful to have they helping us in the big day.
+            They made our wedding day perfect. Thank you The Happiness Ring.
+        </p>
+
+    </section>
+
+    <section id="Contact">
+        <h1 class="head"><span>Contact</span> US</h1>
+        <form class="ff">
+            <div class="input_box">
+                <input class="inp" type="text" placeholder=" Name">
+                <input class="inp" type="email" placeholder=" E-mail">
+            </div>
+            <div class="input_box">
+                <input class="inp" type="number" placeholder=" Number">
+                <input class="inp" type="text" placeholder=" Subject">
+            </div>
+            <textarea class="inp" placeholder=" Massage" id="msg" cols="30" rows="10"></textarea>
+            <a href="#" class="btn">Send Massage</a>
+        </form>
+
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="contaner">
+            <div class="box_">
+                <h1 class="head_">Branches</h1>
+                <ul>
+                   <li><i class="fa-solid fa-location-dot" style="color: #1765ee;"></i>Egypt</li>
+                   <li><i class="fa-solid fa-location-dot" style="color: #1765ee;"></i>Morocco</li>
+                   <li><i class="fa-solid fa-location-dot" style="color: #1765ee;"></i>Saudi Arabia</li>
+                   <li><i class="fa-solid fa-location-dot" style="color: #1765ee;"></i>United Arab Emirates</li> 
+                </ul>
+            </div>
+
+            <div class="box_">
+                <h1 class="head_">Quick links</h1>
+                <ul>
+                    <li><i class="fa-solid fa-jet-fighter" style="color: #1765ee;"></i><a href="#Home">Home</a></li>
+                    <li><i class="fa-solid fa-jet-fighter" style="color: #1765ee;"></i><a href="#Price">Service</a></li>
+                    <li><i class="fa-solid fa-jet-fighter" style="color: #1765ee;"></i><a href="#About">About</a></li>
+                    <li><i class="fa-solid fa-jet-fighter" style="color: #1765ee;"></i><a href="#Gallery">Gallery</a></li>
+                    <li><i class="fa-solid fa-jet-fighter" style="color: #1765ee;"></i><a href="#Price">Price</a></li>
+                    <li><i class="fa-solid fa-jet-fighter" style="color: #1765ee;"></i><a href="#Review">Review</a></li>
+                    <li><i class="fa-solid fa-jet-fighter" style="color: #1765ee;"></i><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="box_">
+                <h1 class="head_">Contact info</h1>
+                <ul>
+                    <li><i class="fa-solid fa-phone-flip" style="color: #1765ee;"></i>+156-456-9852</li>
+                    <li><i class="fa-solid fa-phone-flip" style="color: #1765ee;"></i>+753-693-8828</li>
+                    <li><i class="fa-solid fa-envelope" style="color: #1765ee;"></i>ahmedmfarid339@gmai.com</li>
+                    <li><i class="fa-solid fa-house" style="color: #1765ee;"></i>Shopra,Cairo,Egypt</li>
+
+                </ul>
+            </div>
+            <div class="box_">
+                <h1 class="head_">Follow Us</h1>
+                <ul>
+                    <li><i class="fa-brands fa-facebook" style="color: #1765ee;"></i>Facebook</li>
+                    <li><i class="fa-brands fa-instagram" style="color: #1765ee;"></i>Instagram</li>
+                    <li><i class="fa-brands fa-twitter" style="color: #1765ee;"></i>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <div class="creidt">
+            <p>Created By Eng. Ahmed M. Fareed | Credit to MLSC</p>
+        </div>
+    </footer>
+
+
+
+
+    
+
+</body>
+
+</html>
